@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Questionnaire sur les onglets</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      width: 300px;
+    }
+    button {
+      margin-top: 10px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin: 5px 0;
+    }
+    input, textarea {
+      width: 100%;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Questionnaire</h3>
+  <ul id="tabList"></ul>
+  <button id="runButton">Extraire le texte</button>
+  <textarea id="questionInput" placeholder="Posez votre question ici"></textarea>
+  <button id="askQuestion">Poser la question</button>
+  <div id="response"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

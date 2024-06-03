@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Tab List Extension",
+  "version": "1.0",
+  "description": "Q/A on open tab",
+  "permissions": ["tabs", "activeTab", "storage", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
